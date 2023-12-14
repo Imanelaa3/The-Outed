@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -82,4 +82,15 @@
 
     
 </body>
-</html>
+</html> -->
+<?php 
+require "./ressources/templates/_header.php"
+?>
+
+<div class="test"></div>
+
+
+<?php 
+require "./ressources/templates/_footer.php"
+?>
+
