@@ -14,7 +14,7 @@
 
     <nav class="destop">
         <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
-            <img src="./ressources/photos/logo.png" alt="logo">
+            <img src="./../../ressources/photos/logo.png" alt="logo">
             <span>The Outed</span>
         </a>
 
@@ -25,12 +25,16 @@
                 <span></span>
             </button>
             <div class="navlinks-container">
-                <a href="#"
+                <a href="/../../index.php"
                 aria-current="page">Notre histoire</a>
-                <a href="#">Terrain de jeux</a>
+                <a href="./MVC/View/TerrainDeJeu.php">Terrain de jeux</a>
                 <a href="#">Rejoingnez nous</a>
+                <a href="#">Blog</a>
+
             </div>
         </div>
     </nav>  
 </header>
 <body>
+    <div class="main">
+    <h1><?=$title??"default"?></h1>

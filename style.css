@@ -8,17 +8,175 @@
 
 body {
   font-family: Montserrat, Helvetica, sans-serif;
-  background: #f4f4f4;
+  background: #8a9461;
+}
+h1{
+  text-align: center;
+  text-decoration: underline;
+  margin: 50px;
 }
 
+footer {
+  background: black;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  padding: 10px;
+  margin-top: 50px ;
+}
+h5 {
+  font-size: 400;
+  color: white;
+  text-align: center;
+}
+.main {
+  background-color: rgb(171, 171, 147);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+/* ------Notre Histoire---- */
+.histoire {
+  margin-top: 6px;
+}
+.histoireTO {
+  display: flex;
+  padding: 1%;
+  background-color: #5d6755 ;
+  border-radius: 5px;
+  
+}
+
+.imgIndex,
+.pIndex {
+  margin: 3%;
+}
+.pIndex {
+  font-size: 1.5rem;
+}
+
+.pln {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.banniere {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  object-fit: cover;
+  
+}
+
+.imgEquipe {
+  width: 250px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.photoEquipe {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .photoEquipe{
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .imgIndex {
+    display: none;
+    
+  }
+}
+
+/* ----TERRAIN DE JEU------ */
+
+.terrain{
+  display: flex;
+  flex-direction: column;
+}
+.imgterrain{
+  height: 50px;
+  object-fit: cover;
+}
+.mission{
+  display: flex;
+  justify-content: space-around;
+}
+.missionCard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26%;
+  border: 0.2px dotted black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px gray;
+  background-color: #5d6755;
+}
+.imgMission{
+  width: 90%;
+  height: 40%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+h4{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.linkMission{
+  background-image: url(./../../ressources/photos/bannierevert.jpg);
+  object-fit: cover;
+  border-radius: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.pterrain{
+  margin-top: 10px;
+  padding: 10px;
+
+}
+
+a{
+  color: white;
+  text-decoration: none;
+
+}
+
+@media (max-width: 900px) {
+  .mission{
+    flex-direction: column;
+  }
+  .missionCard{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+}
+
+
+/* -----MENU HAMBURGER---- */
+
 nav {
-  position: fixed;
+  position: static;
   width: 100%;
   display: flex;
   align-items: center;
   padding: 15px 25px;
   background: #fafafa;
-  box-shadow: inset 0px -1px 0px #c5c5c6;
+  box-shadow: inset 1px -1px 2px #212122;
 }
 .nav-icon {
   display: flex;
@@ -37,8 +195,8 @@ nav {
 
 .nav-icon img {
   width: 40px;
- border-radius: 50%;
- border: 1px solid red;
+  border-radius: 50%;
+  border: 1px solid red;
 }
 
 .hamburger {
@@ -179,7 +337,6 @@ nav {
     margin: 10px 0px;
   }
 
-
   .nav-authentication {
     order: 3;
     margin-left: 0;
@@ -206,22 +363,4 @@ nav {
   .nav-icon span {
     font-size: 20px;
   }
-}
-
-footer{
-    background: black;
-    width: 100%;
-    position: relative;
-    bottom: 0px;
-    padding: 10px;
-}
-h5{
-    font-size: 400;
-    color: white;
-    text-align: center;
-    
-}
-
-.test{
-    height: 500vh;
 }
