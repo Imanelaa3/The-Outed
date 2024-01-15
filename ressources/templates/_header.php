@@ -25,11 +25,12 @@
                 <span></span>
             </button>
             <div class="navlinks-container">
-                <a href="/../../index.php"
+                <a href="/"
                 aria-current="page">Notre histoire</a>
-                <a href="./MVC/View/TerrainDeJeu.php">Terrain de jeux</a>
-                <a href="#">Rejoingnez nous</a>
+                <a href="/TerrainDeJeu">Terrain de jeux</a>
+                <a href="/Rejoindre">Rejoingnez nous</a>
                 <a href="#">Blog</a>
+                <a id="connexionLink" href="#">Connexion</a>
 
             </div>
         </div>
