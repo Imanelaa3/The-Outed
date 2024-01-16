@@ -10,7 +10,7 @@ require "./ressources/templates/_header.php";
 <div class="histoire">
 
     <div class="histoireTO">
-        <img class="imgIndex" src="./ressources/photos/per3.jpeg" alt="photo notre histoire">
+        <img class="imgIndex" src="./ressources/photos/m1.jpg" alt="photo notre histoire">
         <p class="pIndex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque ullam similique,
             nam ipsa explicabo exercitationem animi adipisci provident reprehenderit, maxime dicta minima odit aut
             dolorem. Laudantium enim modi iusto!</p>
@@ -32,7 +32,7 @@ require "./ressources/templates/_header.php";
     <h2>Les Membres de l'equipe</h2>
     <div class="photoEquipe">
         <div>
-            <img class="imgEquipe" src="./ressources/photos/per3.jpeg" alt="membr1">
+            <img class="imgEquipe" src="./ressources/photos/per1.jpg" alt="membr1">
             <h6>JB : president</h6>
         </div>
         <div>

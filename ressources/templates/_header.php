@@ -15,7 +15,7 @@
     <nav class="destop">
         <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
             <img src="./../../ressources/photos/logo.png" alt="logo">
-            <span>The Outed</span>
+            <span id="titreLogo">The Outed</span>
         </a>
 
         <div class="main-nav-link">

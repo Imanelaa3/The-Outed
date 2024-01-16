@@ -51,4 +51,3 @@ function clean_data(string $data)
     return htmlspecialchars($data);
     //return htmlspecialchars(stripcslashes(trim($data)))
 }
-?>

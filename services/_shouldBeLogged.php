@@ -5,7 +5,7 @@ if(session_status()===PHP_SESSION_NONE)
  * Verifie si l'utilisateur est connecté et le redirige dans le cas contraire 
  *
  * @param boolean $logged true si l'utilisateur doit etre connecté et false si il ne doit pas etre connecté
- * @param string $redirect chemind e redirection
+ * @param string $redirect chemin de redirection
  * @return void 
  */
 function shouldBeLogged(bool $logged = true,string $redirect = "/"):void 
