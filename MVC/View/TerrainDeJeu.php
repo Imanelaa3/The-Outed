@@ -7,7 +7,7 @@ require __DIR__.'/../../ressources/templates/_header.php';
 
 <div class="terrain">
     <h2>Actuellement nous jouons sur un terrain a Tourcoing mais nous recherchons notre prochain terrain de jeux. Contactez nous si vous avez des filons</h2>
-    <img class="imgterrain" src="/../../ressources/photos/bannierevert.jpg" alt="banniere">
+    <img class="banniere" src="/../../ressources/photos/bannierevert.jpg" alt="banniere">
 </div>
 
 <div class="missionS">

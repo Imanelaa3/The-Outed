@@ -12,7 +12,7 @@ require __DIR__.'/../../ressources/templates/_header.php';
 
     
     
-    <img class="imgterrain" src="/../../ressources/photos/bannierevert.jpg" alt="banniere">
+    <img class="banniere" src="/../../ressources/photos/bannierevert.jpg" alt="banniere">
 </div>
 
 

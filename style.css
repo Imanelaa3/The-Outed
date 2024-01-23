@@ -15,7 +15,7 @@
 
 
 /* les police ne fonctionne pas je sais pas pourquoi  */
-/* @font-face {
+@font-face {
   font-family: 'bank';
   src: url('/ressources/font/f25_bank_printer/F25_Bank_Printer_Bold.ttf') format('truetype'),
         url('/ressources/font/f25_bank_printer/F25_Bank_Printer.ttf') format('truetype')
@@ -27,7 +27,7 @@
 @font-face {
   font-family: 'Bteam';
   src: url(../ressources/font/b_team/B-TEAM.otf);
-} */
+}
 
 
 body {
@@ -61,6 +61,7 @@ h5 {
   border-left: 1px solid black;
   border-right: 1px solid black;
   box-shadow: #333 2px -2px 3px;
+  border-radius: 5px;
 }
 
 h2 {
@@ -72,6 +73,14 @@ h2 {
 /* ------Notre Histoire---- */
 .histoire {
   margin-top: 6px;
+  position: relative;
+  width: 110%;
+  right: -5%;
+  left: -5%;
+  box-shadow: 3px 3px 3px black;
+
+
+
 }
 .histoireTO {
   display: flex;
@@ -107,7 +116,15 @@ h2 {
   margin-bottom: 20px;
   height: 50px;
   object-fit: cover;
-  
+}
+
+img.banniere{
+  box-shadow: 3px 3px 3px black;
+  position: relative;
+  width: 110%;
+  left: -5%;
+  right: -5%;
+  border: 1px solid black;
 }
 
 .imgEquipe {
@@ -250,12 +267,7 @@ h3{
 }
 
 .connexion{
-  width: 40%;
-}
-
-.connexionLink{
-  color: red;
-  font-size: 1.2rem;
+  width: 20%;
 }
 
 
@@ -361,7 +373,8 @@ nav {
 
 #connexionLink{
   font-weight: 600;
-  margin-left: 400px;
+  margin-left: 10px;
+  
 }
 
 @media (max-width: 900px) {

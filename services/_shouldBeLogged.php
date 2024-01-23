@@ -45,4 +45,3 @@ function shouldBeLogged(bool $logged = true,string $redirect = "/"):void
         }
     }
 }
-?>

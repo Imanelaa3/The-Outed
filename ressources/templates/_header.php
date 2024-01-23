@@ -31,6 +31,7 @@
                 <a href="/Rejoindre">Rejoingnez nous</a>
                 <a href="#">Blog</a>
                 <a id="connexionLink" href="#">Connexion</a>
+                <a id="connexionLink" href="/Inscription">Inscription</a>
 
             </div>
         </div>
