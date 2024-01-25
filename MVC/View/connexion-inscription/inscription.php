@@ -1,10 +1,11 @@
 <?php
 
-$title="NOTRE TERRAIN DE JEU";
+$title="INSCRPTION ";
 
 require __DIR__.'/../../../ressources/templates/_header.php';
 ?>
 
+<h4>Dese que tu sera inscrit tu pourra visiter notre blog et communiquer avec la team</h4>
 <form action="" method="post">
     <!-- username -->
     <label for="username">Nom d'Utilisateur :</label>

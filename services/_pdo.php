@@ -3,7 +3,7 @@
 function connexionPDO():\PDO
 {
     //Je recupere les infos di fichier de configutayion On peut mettre ce fichier dans une varibale grace au faite qu'on areturn dan sl'e fichier blogConfig
-    $config = require __DIR__ . "./../config/_blogConfig.php";
+    $config = require __DIR__ . "/../ressources/config/_blogConfig.php";
     /*
         jE VAIS DEVOIR CONSTRUIRE UN dsn? dATA sOURCE nAME? C4ST UN STRING QUI CONTIENT TOUTES LES INFORMATIONS pour localiser la BDD
         il pre,dra la forme suivante :
