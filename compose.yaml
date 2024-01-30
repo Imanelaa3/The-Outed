@@ -16,7 +16,7 @@ services:
       - DB_HOST=mysql
       - DB_USER=root
       - DB_PASSWORD=root
-      - DB_NAME=blog
+      - DB_NAME=theOutedBlog
   mysql:
     image: mariadb
     container_name: serverMySQLTO

@@ -2,7 +2,7 @@
 
 require __DIR__."/../../services/_shouldBeLogged.php";
 require __DIR__."/../../services/_pdo.php";
-/*  require __DIR__."/Model/inscriptionModel.php";  */
+/* require __DIR__."/Model/inscriptionModel.php";  */ 
 
 
 /* ----------------DOIT ETRE DANS LE MODEL MAIS JE N'ARRIVE PAS A RELIER LE FICHIER inscriptionModel.php------------------- */
@@ -17,7 +17,7 @@ require __DIR__."/../../services/_pdo.php";
 function addUser(string $us, string $em, string $pass): void
 {
     $pdo = connexionPDO();
-    $sql = $pdo->prepare("INSERT INTO users(username, email, password) VALUES(?, ?, ?)");
+    $sql = $pdo->prepare("INSERT INTO users(username, email, password_hash) VALUES(?, ?, ?)");
     $sql->execute([$us, $em, $pass]);
 }
 

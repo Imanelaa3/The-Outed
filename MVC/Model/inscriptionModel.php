@@ -13,7 +13,7 @@ require __DIR__ . "/services/_pdo.php";
 function addUser(string $us, string $em, string $pass): void
 {
     $pdo = connexionPDO();
-    $sql = $pdo->prepare("INSERT INTO users(username, email, password) VALUES(?, ?, ?)");
+    $sql = $pdo->prepare("INSERT INTO users(username, email, password_hash) VALUES(?, ?, ?)");
     $sql->execute([$us, $em, $pass]);
 }
 
