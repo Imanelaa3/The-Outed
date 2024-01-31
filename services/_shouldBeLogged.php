@@ -45,3 +45,11 @@ function shouldBeLogged(bool $logged = true,string $redirect = "/"):void
         }
     }
 }
+
+function isLogged():bool
+{
+    if(!isset($_SESSION["logged"]) || $_SESSION["logged"]!== true)
+        return false;
+    else
+        return true;
+}

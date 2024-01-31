@@ -1,6 +1,6 @@
 <?php 
 
-require __DIR__ . "/services/_pdo.php";
+require_once __DIR__ . "/../../services/_pdo.php";
 
 /**
  * Permet d'ajouter un nouvelle utilisateur a lorsqu'il s'inscrit

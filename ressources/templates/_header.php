@@ -1,3 +1,6 @@
+<?php require_once __DIR__ ."/../../services/_shouldBeLogged.php"?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,8 +33,26 @@
                 <a href="/TerrainDeJeu">Terrain de jeux</a>
                 <a href="/Rejoindre">Rejoingnez nous</a>
                 <a href="#">Blog</a>
-                <a id="connexionLink" href="#">Connexion</a>
-                <a id="connexionLink" href="/Inscription">Inscription</a>
+                
+                    <?php if(!isLogged()){?>
+                            <a id="connexionLink" href="/Connexion">Connexion</a>
+                    <?php }else{ ?>
+                            <a id="connexionLink" href="/Deconnexion">Deconnexion</a>
+                    <?php }?>
+                                                    
+                    <?php if(!isLogged()){?>
+                    <a id="connexionLink" href="/Inscription">Inscription</a>
+                    <?php }?>
+
+                <strong> 
+                    <?php 
+                        if (isLogged()) {
+                            echo "Bonjour " . $_SESSION["username"];
+                        } else {
+                            echo "";
+                        }
+                    ?>
+                </strong>
 
             </div>
         </div>

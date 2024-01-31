@@ -12,5 +12,17 @@ any("/Inscription", function(){
     inscription();
 });
 
-any("/404", "./404.php");
+any("/Connexion", function(){
+    require __DIR__."/MVC/Controller/connexionController.php";
+    connexion();
+});
+
+any("/Deconnexion", function(){
+    require __DIR__."/MVC/Controller/connexionController.php";
+    deconnexion();
+});
+
+
+
+any("/404", "/404.php");
 

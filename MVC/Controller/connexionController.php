@@ -1,7 +1,8 @@
 <?php 
 
-require __DIR__ ."/../../ressources/services/_shouldBeLogged.php";
-require __DIR__ ."/../../ressources/services/_pdo.php";
+require __DIR__ ."/../../services/_shouldBeLogged.php";
+require __DIR__ ."/../../services/_pdo.php";
+require __DIR__ ."/../Model/connexionModel.php";
 
 
 function connexion() {
@@ -10,7 +11,7 @@ function connexion() {
     $email = $pass = "";
     $error = [];
 
-    if($_SERVER["REQUEST_METHOD"]==='POST' && isset($POST['login'])) 
+    if($_SERVER["REQUEST_METHOD"]==='POST' && isset($_POST['email'])) 
     {
         if(empty($_POST['email']))
             $error["email"]="Veuillez entrer un email";
@@ -24,7 +25,7 @@ function connexion() {
 
         if(empty($error))
         {
-            //Je regarde si j'ai un utilisateur qui correspond aa l'email
+            //Je regarde si j'ai un utilisateur qui correspond a l'email
             $user = getOneUserByEmail($email);
             //si oui
             if($user)
@@ -35,9 +36,9 @@ function connexion() {
                     $_SESSION["logged"] = true;
                     $_SESSION["username"] = $user["username"];
                     $_SESSION["email"] = $user["email"];
-                    $_SESSION["idUser"] = $user["idUser"];
+                    $_SESSION["id"] = $user["id"];
                     //et on redirige sur la page d'acceuil ou ailleur on verra plus tard pour la redirection
-                    header("Location:/");
+                    header("Location:/"); 
                     exit;
                 }
                 else
@@ -65,7 +66,8 @@ function deconnexion()
     unset($_SESSION);
     session_destroy();
     setcookie("PHPSESSID","", time() -3600);
+    header("refresh: 3;url=/");
+    require __DIR__ ."/../View/connexion-inscription/deconnexion.php";
 
-    header("Location:/connexion");
 }
 ?>
