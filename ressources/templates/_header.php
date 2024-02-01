@@ -9,6 +9,10 @@
     <title>The outed</title>
     <link rel="stylesheet" href="/style.css">
     <script src="/main.js" defer></script>
+    <script src="/script/script.js" defer></script>
+    <script>
+        const user = "<?php echo $_SESSION["username"]??"" ?>"
+    </script>
     
 </head>
 <header>

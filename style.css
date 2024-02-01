@@ -54,6 +54,9 @@ h5 {
   color: white;
   text-align: center;
 }
+
+
+
 .main {
   background-color: var(--beige);
   margin-left: 10%;
@@ -325,7 +328,7 @@ nav {
 .nav-icon img {
   width: 40px;
   border-radius: 50%;
-  border: 1px solid red;
+  
 }
 
 .hamburger {

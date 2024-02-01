@@ -38,3 +38,13 @@ services:
       PMA_HOST: mysql
     ports:
       - "8002:80"
+  serverratchet:
+    build: ./bin
+    container_name: serverPhpRatchet
+    depends_on: 
+      - mysql
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./bin:/var/www/html

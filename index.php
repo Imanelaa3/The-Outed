@@ -50,6 +50,16 @@ require "./ressources/templates/_header.php";
     </div>
 </div>
 
+<div>
+    <div class="blockChat">
+                <pre class="chat"></pre>
+                <div class="btnChat">
+                    <input type="text" id="message">
+                    <button id="sendMessage">Envoyer </button>
+                </div>
+            </div>
+</div>
+
 
 
 

@@ -66,7 +66,7 @@ function deconnexion()
     unset($_SESSION);
     session_destroy();
     setcookie("PHPSESSID","", time() -3600);
-    header("refresh: 3;url=/");
+    header("refresh: 1;url=/");
     require __DIR__ ."/../View/connexion-inscription/deconnexion.php";
 
 }
