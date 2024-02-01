@@ -17,7 +17,7 @@ require "./ressources/templates/_header.php";
     </div>
 </div>
 <div class="pln">
-    <h2>L'air soft pour les nuls</h2>
+    <h2>L'airsoft pour les nuls</h2>
     <p class="banniere">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque, praesentium cum
         libero repellat nesciunt alias, in dolore deleniti accusantium dolorem asperiores, doloribus magni. Ab
         dolore nam facere qui cum.</p>
@@ -50,15 +50,7 @@ require "./ressources/templates/_header.php";
     </div>
 </div>
 
-<div>
-    <div class="blockChat">
-                <pre class="chat"></pre>
-                <div class="btnChat">
-                    <input type="text" id="message">
-                    <button id="sendMessage">Envoyer </button>
-                </div>
-            </div>
-</div>
+
 
 
 

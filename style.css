@@ -509,3 +509,29 @@ nav {
     margin-left: 0px;
   }
 }
+
+/* -----------------CHAT------------------- */
+
+.blockChat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnChat{
+  width: 100%;
+  display: flex;
+
+}
+
+.chat{
+  width: 90%;
+  height: 30vh;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+#message{
+  width: 100%;
+}

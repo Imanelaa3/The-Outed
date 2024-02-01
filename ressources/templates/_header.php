@@ -42,10 +42,12 @@
                             <a id="connexionLink" href="/Connexion">Connexion</a>
                     <?php }else{ ?>
                             <a id="connexionLink" href="/Deconnexion">Deconnexion</a>
+                            <a id="connexionLink" href="/Chat">Chat</a>
                     <?php }?>
                                                     
                     <?php if(!isLogged()){?>
                     <a id="connexionLink" href="/Inscription">Inscription</a>
+                    
                     <?php }?>
 
                 <strong> 
