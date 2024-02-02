@@ -16,7 +16,7 @@ function getAllUsers():array
 function getOneUserById($id)
 {
     $pdo = connexionPDO();
-    $sql = $pdo->prepare("SELECT * FROM users WHERE idUser = ?");
+    $sql = $pdo->prepare("SELECT * FROM users WHERE id = ?");
     $sql->execute([$id]);
     return $sql->fetch();
 }
@@ -30,6 +30,9 @@ function getOneUserByEmail(string $email)
     $sql->execute([$email]);
     return $sql->fetch();
 }
+
+
+
 
 
 

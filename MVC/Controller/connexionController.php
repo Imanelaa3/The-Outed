@@ -3,6 +3,7 @@
 require __DIR__ ."/../../services/_shouldBeLogged.php";
 require __DIR__ ."/../../services/_pdo.php";
 require __DIR__ ."/../Model/connexionModel.php";
+require __DIR__ ."/../Model/chatModel.php";
 
 
 function connexion() {
@@ -36,7 +37,12 @@ function connexion() {
                     $_SESSION["logged"] = true;
                     $_SESSION["username"] = $user["username"];
                     $_SESSION["email"] = $user["email"];
-                    $_SESSION["id"] = $user["id"];
+                    $_SESSION["id"] = $user["id"]; 
+                   
+                    //Je modifie egalement le statut de connection pour pouvoir recuperer tous les utilisateurs connecté
+                    $user = isConnected($user["id"]);
+                    /* $_SESSION["statutConnexion"] = $user["statutConnexion"]; */
+
                     //et on redirige sur la page d'acceuil ou ailleur on verra plus tard pour la redirection
                     header("Location:/"); 
                     exit;

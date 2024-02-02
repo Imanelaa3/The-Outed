@@ -1,2 +1,4 @@
 FROM php:8.2-cli
+RUN apt -y update && apt -y upgrade
+RUN docker-php-ext-install pdo_mysql
 CMD ["php","/var/www/html/server.php"]
